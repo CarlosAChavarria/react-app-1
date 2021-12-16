@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from 'react';
+// importacion de elementos para crear rutas
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// importacion de componentes
+import Inicio from './components/inicio'
+import CardPlatillo from './components/cardPlatillo';
+import Countries from './components/countries';
+import Dishes from './components/dishes';
+import NotFound from './components/notFound';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './styles/App.css';
+
+class App extends Component {
+  render(){
+    return (
+      <Router>
+        <div className="App">
+          {/* rutas para navegar entre archivos */}
+          <Switch>
+            <Route path="/" exact> <Inicio/> </Route>
+            <Route path="/showDishes" component={Dishes}></Route>
+            <Route path="/pais"> <Countries/> </Route>
+            <Route path="/card/:name"> <CardPlatillo/> </Route>
+            <Route component={NotFound}/>
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;

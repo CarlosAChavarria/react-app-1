@@ -1,3 +1,6 @@
+/* importación de hojas de estilos */
+@import 'cardPlatillo.css';
+
 .App {
   text-align: center;
 }
@@ -35,4 +38,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.spaceIcons{
+  margin: 100px;
+  padding: 50px;
+}
+
+.b_showPlatillos{
+  margin-top: 30px;
 }

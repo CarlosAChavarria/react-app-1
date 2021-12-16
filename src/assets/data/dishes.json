@@ -1,0 +1,40 @@
+{
+    "dishes": [
+        {
+            "id":"1",
+            "name":"Tacos",
+            "country":"Mexico",
+            "ingredientes":[
+                "Tortilla",
+                "Carne",
+                "Cebolla",
+                "Cilantro",
+                "Salsa picnte"
+            ]
+        },
+        {
+            "id":"2",
+            "name":"Sopes",
+            "country":"Mexico",
+            "ingredientes":[
+                "Tortilla",
+                "Pasta de frijol",
+                "Cebolla",
+                "Cilantro",
+                "Salsa picnte"
+            ]
+        },
+        {
+            "id":"3",
+            "name":"Pizza",
+            "country":"Italia",
+            "ingredientes":[
+                "Masa",
+                "Salsa de tomate",
+                "Carne",
+                "Queso",
+                "Condimentos"
+            ]
+        }
+    ]
+}
